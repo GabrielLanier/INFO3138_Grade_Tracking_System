@@ -8,25 +8,19 @@ class Program
 {
     static void Main(string[] args)
     {
-        string filePath = Path.Combine(Directory.GetCurrentDirectory(), "grades.json");
-        if (File.Exists(filePath)){
-            string gradeFile = File.ReadAllText(filePath);
-
-            
-        }
-
-        else
+        using (StreamReader file = new StreamReader("grades.json"))
         {
-            Console.WriteLine("file not found in current directory");
-        }
+            string currLine;
+            while ((currLine = file.ReadLine()) != null)
+            {
+                string[] values = currLine.Split(' ');
 
-        
+            }
+        }
 
         Console.WriteLine("\t\t\t\t\t\t~GRADING TRACKING SYSTEM~\t\t\t\t\n");
         Console.WriteLine(" +--------------------------------------------------------------------------------------------------------------------+");
-
-
-
-        
     }
+
+    
 }
