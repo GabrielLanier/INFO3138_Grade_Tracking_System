@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace GLEI_GradeTrackingSystem
 {
 
-    class Evaluations
+    class Evaluation
     {
         public string EvaluationName { get; set; } = "";
         public double OutOfEval {  get; set; }
@@ -22,7 +22,7 @@ namespace GLEI_GradeTrackingSystem
         public double OutOf {  get; set; }
         public double Percent {  get; set; }
 
-        public List<Evaluations> Evaluation = new();
+        public List<Evaluation> Evaluation { get; set; } = new();
   
     }
 }
