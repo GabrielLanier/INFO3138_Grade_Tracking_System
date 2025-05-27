@@ -6,10 +6,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        try
-        {
-
-        }
-        Console.WriteLine("");
+            Console.WriteLine("Hello there");
     }
 }
