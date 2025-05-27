@@ -7,7 +7,7 @@ namespace GLEI_GradeTrackingSystem
 {
     class Program
     {
-        Courses? newCourse;
+        
         static void Main(string[] args)
         {
             using (StreamReader file = new StreamReader("grades.json"))
