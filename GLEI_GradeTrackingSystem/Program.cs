@@ -1,11 +1,21 @@
 ﻿using System;
 using System.IO;
+using System.Text.Json;
 
 
 class Program
 {
     static void Main(string[] args)
     {
-            Console.WriteLine("Hello there");
+        string filePath = Path.Combine(Directory.GetCurrentDirectory(), "grades.json");
+        try
+        {
+            string gradeFile = File.ReadAllText(filePath);
+        }
+
+        catch (Exception e){
+            Console.Error.WriteLine(e.Message);
+        }
+        Console.WriteLine("Hello there");
     }
 }
