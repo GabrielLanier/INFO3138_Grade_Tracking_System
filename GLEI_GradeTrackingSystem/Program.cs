@@ -3,24 +3,28 @@ using System.IO;
 using System.Reflection.Metadata.Ecma335;
 using System.Text.Json;
 
-
-class Program
+namespace GLEI_GradeTrackingSystem
 {
-    static void Main(string[] args)
+    class Program
     {
-        using (StreamReader file = new StreamReader("grades.json"))
+        Courses? newCourse;
+        static void Main(string[] args)
         {
-            string currLine;
-            while ((currLine = file.ReadLine()) != null)
+            using (StreamReader file = new StreamReader("grades.json"))
             {
-                string[] values = currLine.Split(' ');
+                string? currLine;
+                while ((currLine = file.ReadLine()) != null)
+                {
+                    string[] values = currLine.Split(' ');
 
+                }
             }
+
+            Console.WriteLine("\t\t\t\t\t    ~GRADING TRACKING SYSTEM~\t\t\t\t\n");
+            Console.WriteLine(" +--------------------------------------------------------------------------------------------------------------------+");
+            Console.WriteLine(" |\t\t\t\t\t\tGrades Summary\t\t\t\t\t\t\t      |");
+            Console.WriteLine(" +--------------------------------------------------------------------------------------------------------------------+");
         }
 
-        Console.WriteLine("\t\t\t\t\t\t~GRADING TRACKING SYSTEM~\t\t\t\t\n");
-        Console.WriteLine(" +--------------------------------------------------------------------------------------------------------------------+");
     }
-
-    
 }
