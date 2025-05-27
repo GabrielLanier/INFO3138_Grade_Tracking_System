@@ -10,26 +10,21 @@ namespace GLEI_GradeTrackingSystem
         Courses? newCourse;
         static void Main(string[] args)
         {
-            string filePath = Path.Combine(Directory.GetCurrentDirectory(), "grades.json");
-            if (File.Exists(filePath))
+            using (StreamReader file = new StreamReader("grades.json"))
             {
-                string gradeFile = File.ReadAllText(filePath);
+                string? currLine;
+                while ((currLine = file.ReadLine()) != null)
+                {
+                    string[] values = currLine.Split(' ');
 
-
+                }
             }
-
-            else
-            {
-                Console.WriteLine("file not found in current directory");
-            }
-
-
 
             Console.WriteLine("\t\t\t\t\t    ~GRADING TRACKING SYSTEM~\t\t\t\t\n");
             Console.WriteLine(" +--------------------------------------------------------------------------------------------------------------------+");
             Console.WriteLine(" |\t\t\t\t\t\tGrades Summary\t\t\t\t\t\t\t      |");
             Console.WriteLine(" +--------------------------------------------------------------------------------------------------------------------+");
-
         }
+
     }
 }
