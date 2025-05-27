@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Reflection.Metadata.Ecma335;
 using System.Text.Json;
 
 
@@ -16,6 +17,14 @@ class Program
         catch (Exception e){
             Console.Error.WriteLine(e.Message);
         }
-        Console.WriteLine("Hello there");
+
+        
+
+        Console.WriteLine("\t\t\t\t\t\t~GRADING TRACKING SYSTEM~\t\t\t\t\n");
+        Console.WriteLine(" +--------------------------------------------------------------------------------------------------------------------+");
+
+
+
+        
     }
 }
