@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GLEI_GradeTrackingSystem
-build_property.ProjectDir = C:\CPA\Term 4\C++ Graphics - INFO\INFO3138_DeclarativeLanguages\GLEI_GradeTrackingSystem\
+build_property.ProjectDir = C:\CPA\DL - Project1\Project1\INFO3138_DeclarativeLanguages\GLEI_GradeTrackingSystem\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

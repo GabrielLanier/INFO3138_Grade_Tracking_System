@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\CPA\\Term 4\\C++ Graphics - INFO\\INFO3138_DeclarativeLanguages\\GLEI_GradeTrackingSystem\\GLEI_GradeTrackingSystem.csproj",
+      "projectUniqueName": "C:\\CPA\\DL - Project1\\Project1\\INFO3138_DeclarativeLanguages\\GLEI_GradeTrackingSystem\\GLEI_GradeTrackingSystem.csproj",
       "projectName": "GLEI_GradeTrackingSystem",
-      "projectPath": "C:\\CPA\\Term 4\\C++ Graphics - INFO\\INFO3138_DeclarativeLanguages\\GLEI_GradeTrackingSystem\\GLEI_GradeTrackingSystem.csproj",
+      "projectPath": "C:\\CPA\\DL - Project1\\Project1\\INFO3138_DeclarativeLanguages\\GLEI_GradeTrackingSystem\\GLEI_GradeTrackingSystem.csproj",
       "packagesPath": "C:\\Users\\evely\\.nuget\\packages\\",
-      "outputPath": "C:\\CPA\\Term 4\\C++ Graphics - INFO\\INFO3138_DeclarativeLanguages\\GLEI_GradeTrackingSystem\\obj\\",
+      "outputPath": "C:\\CPA\\DL - Project1\\Project1\\INFO3138_DeclarativeLanguages\\GLEI_GradeTrackingSystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\evely\\AppData\\Roaming\\NuGet\\NuGet.Config",

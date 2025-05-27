@@ -6,11 +6,23 @@ using System.Threading.Tasks;
 
 namespace GLEI_GradeTrackingSystem
 {
-    public class Courses
+
+    class Evaluations
+    {
+        public string EvaluationName { get; set; } = "";
+        public double OutOfEval {  get; set; }
+        public double Weight { get; set; }
+        public double MarksEarnedEval { get; set; }
+    }
+
+    class Courses
     {
         public string CourseName { get; set; } = "";
+        public double MarksEarned { get; set; }
+        public double OutOf {  get; set; }
+        public double Percent {  get; set; }
 
-
+        public List<Evaluations> Evaluation = new();
   
     }
 }

@@ -13,3 +13,18 @@ C:\CPA\Term 4\C++ Graphics - INFO\INFO3138_DeclarativeLanguages\GLEI_GradeTracki
 C:\CPA\Term 4\C++ Graphics - INFO\INFO3138_DeclarativeLanguages\GLEI_GradeTrackingSystem\obj\Debug\net8.0\GLEI_GradeTrackingSystem.pdb
 C:\CPA\Term 4\C++ Graphics - INFO\INFO3138_DeclarativeLanguages\GLEI_GradeTrackingSystem\obj\Debug\net8.0\GLEI_GradeTrackingSystem.genruntimeconfig.cache
 C:\CPA\Term 4\C++ Graphics - INFO\INFO3138_DeclarativeLanguages\GLEI_GradeTrackingSystem\obj\Debug\net8.0\ref\GLEI_GradeTrackingSystem.dll
+C:\CPA\DL - Project1\Project1\INFO3138_DeclarativeLanguages\GLEI_GradeTrackingSystem\bin\Debug\net8.0\GLEI_GradeTrackingSystem.exe
+C:\CPA\DL - Project1\Project1\INFO3138_DeclarativeLanguages\GLEI_GradeTrackingSystem\bin\Debug\net8.0\GLEI_GradeTrackingSystem.deps.json
+C:\CPA\DL - Project1\Project1\INFO3138_DeclarativeLanguages\GLEI_GradeTrackingSystem\bin\Debug\net8.0\GLEI_GradeTrackingSystem.runtimeconfig.json
+C:\CPA\DL - Project1\Project1\INFO3138_DeclarativeLanguages\GLEI_GradeTrackingSystem\bin\Debug\net8.0\GLEI_GradeTrackingSystem.dll
+C:\CPA\DL - Project1\Project1\INFO3138_DeclarativeLanguages\GLEI_GradeTrackingSystem\bin\Debug\net8.0\GLEI_GradeTrackingSystem.pdb
+C:\CPA\DL - Project1\Project1\INFO3138_DeclarativeLanguages\GLEI_GradeTrackingSystem\obj\Debug\net8.0\GLEI_GradeTrackingSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\CPA\DL - Project1\Project1\INFO3138_DeclarativeLanguages\GLEI_GradeTrackingSystem\obj\Debug\net8.0\GLEI_GradeTrackingSystem.AssemblyInfoInputs.cache
+C:\CPA\DL - Project1\Project1\INFO3138_DeclarativeLanguages\GLEI_GradeTrackingSystem\obj\Debug\net8.0\GLEI_GradeTrackingSystem.AssemblyInfo.cs
+C:\CPA\DL - Project1\Project1\INFO3138_DeclarativeLanguages\GLEI_GradeTrackingSystem\obj\Debug\net8.0\GLEI_GradeTrackingSystem.csproj.CoreCompileInputs.cache
+C:\CPA\DL - Project1\Project1\INFO3138_DeclarativeLanguages\GLEI_GradeTrackingSystem\obj\Debug\net8.0\GLEI_GradeTrackingSystem.sourcelink.json
+C:\CPA\DL - Project1\Project1\INFO3138_DeclarativeLanguages\GLEI_GradeTrackingSystem\obj\Debug\net8.0\GLEI_GradeTrackingSystem.dll
+C:\CPA\DL - Project1\Project1\INFO3138_DeclarativeLanguages\GLEI_GradeTrackingSystem\obj\Debug\net8.0\refint\GLEI_GradeTrackingSystem.dll
+C:\CPA\DL - Project1\Project1\INFO3138_DeclarativeLanguages\GLEI_GradeTrackingSystem\obj\Debug\net8.0\GLEI_GradeTrackingSystem.pdb
+C:\CPA\DL - Project1\Project1\INFO3138_DeclarativeLanguages\GLEI_GradeTrackingSystem\obj\Debug\net8.0\GLEI_GradeTrackingSystem.genruntimeconfig.cache
+C:\CPA\DL - Project1\Project1\INFO3138_DeclarativeLanguages\GLEI_GradeTrackingSystem\obj\Debug\net8.0\ref\GLEI_GradeTrackingSystem.dll
