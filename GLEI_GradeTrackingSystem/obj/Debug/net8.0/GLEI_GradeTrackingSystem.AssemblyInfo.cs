@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GLEI_GradeTrackingSystem")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8463f0c27a2e53427316bfb83af072dd54332671")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eda6c807a80fd7826eacc2188658cb31a795cde6")]
 [assembly: System.Reflection.AssemblyProductAttribute("GLEI_GradeTrackingSystem")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GLEI_GradeTrackingSystem")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

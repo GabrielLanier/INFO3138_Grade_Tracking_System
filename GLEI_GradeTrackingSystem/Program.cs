@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Numerics;
 using System.Reflection.Metadata.Ecma335;
 using System.Text.Json;
 
@@ -7,18 +8,17 @@ namespace GLEI_GradeTrackingSystem
 {
     class Program
     {
-        Courses? newCourse;
         static void Main(string[] args)
         {
-            using (StreamReader file = new StreamReader("grades.json"))
-            {
-                string? currLine;
-                while ((currLine = file.ReadLine()) != null)
-                {
-                    string[] values = currLine.Split(' ');
+            using FileStream file = File.OpenRead("courses.json");
+           
+            var deCourses = JsonSerializer.Deserialize<List<Course>>(file);
 
-                }
+            foreach (var c in deCourses)
+            {
+                
             }
+  
 
             Console.WriteLine("\t\t\t\t\t    ~GRADING TRACKING SYSTEM~\t\t\t\t\n");
             Console.WriteLine(" +--------------------------------------------------------------------------------------------------------------------+");

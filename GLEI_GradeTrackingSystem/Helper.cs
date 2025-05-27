@@ -10,12 +10,12 @@ namespace GLEI_GradeTrackingSystem
     class Evaluation
     {
         public string EvaluationName { get; set; } = "";
-        public double OutOfEval {  get; set; }
+        public double TotalMarks {  get; set; }
         public double Weight { get; set; }
         public double MarksEarnedEval { get; set; }
     }
 
-    class Courses
+    class Course
     {
         public string CourseName { get; set; } = "";
         public double MarksEarned { get; set; }
