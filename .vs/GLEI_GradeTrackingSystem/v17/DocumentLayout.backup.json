@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{E0FB1EDA-E98D-43F4-821D-1F04A130C46D}|GLEI_GradeTrackingSystem\\GLEI_GradeTrackingSystem.csproj|c:\\cpa\\term 4\\c\u002B\u002B graphics - info\\info3138_declarativelanguages\\glei_gradetrackingsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0FB1EDA-E98D-43F4-821D-1F04A130C46D}|GLEI_GradeTrackingSystem\\GLEI_GradeTrackingSystem.csproj|solutionrelative:glei_gradetrackingsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0FB1EDA-E98D-43F4-821D-1F04A130C46D}|GLEI_GradeTrackingSystem\\GLEI_GradeTrackingSystem.csproj|c:\\cpa\\term 4\\c\u002B\u002B graphics - info\\info3138_declarativelanguages\\glei_gradetrackingsystem\\courses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0FB1EDA-E98D-43F4-821D-1F04A130C46D}|GLEI_GradeTrackingSystem\\GLEI_GradeTrackingSystem.csproj|solutionrelative:glei_gradetrackingsystem\\courses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,13 +26,30 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Courses.cs",
+              "DocumentMoniker": "C:\\CPA\\Term 4\\C\u002B\u002B Graphics - INFO\\INFO3138_DeclarativeLanguages\\GLEI_GradeTrackingSystem\\Courses.cs",
+              "RelativeDocumentMoniker": "GLEI_GradeTrackingSystem\\Courses.cs",
+              "ToolTip": "C:\\CPA\\Term 4\\C\u002B\u002B Graphics - INFO\\INFO3138_DeclarativeLanguages\\GLEI_GradeTrackingSystem\\Courses.cs",
+              "RelativeToolTip": "GLEI_GradeTrackingSystem\\Courses.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T17:34:19.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\CPA\\Term 4\\C\u002B\u002B Graphics - INFO\\INFO3138_DeclarativeLanguages\\GLEI_GradeTrackingSystem\\Program.cs",
               "RelativeDocumentMoniker": "GLEI_GradeTrackingSystem\\Program.cs",
-              "ToolTip": "C:\\CPA\\Term 4\\C\u002B\u002B Graphics - INFO\\INFO3138_DeclarativeLanguages\\GLEI_GradeTrackingSystem\\Program.cs*",
-              "RelativeToolTip": "GLEI_GradeTrackingSystem\\Program.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABKAAAAAAAAAA==",
+              "ToolTip": "C:\\CPA\\Term 4\\C\u002B\u002B Graphics - INFO\\INFO3138_DeclarativeLanguages\\GLEI_GradeTrackingSystem\\Program.cs",
+              "RelativeToolTip": "GLEI_GradeTrackingSystem\\Program.cs",
+<<<<<<< HEAD
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+>>>>>>> 621aa995f0e950fa1ba26808d06dbf86e8b13fcb
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-26T23:55:09.54Z",
               "EditorCaption": ""

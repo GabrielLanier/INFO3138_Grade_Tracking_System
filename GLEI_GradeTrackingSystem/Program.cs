@@ -9,13 +9,15 @@ class Program
     static void Main(string[] args)
     {
         string filePath = Path.Combine(Directory.GetCurrentDirectory(), "grades.json");
-        try
-        {
+        if (File.Exists(filePath)){
             string gradeFile = File.ReadAllText(filePath);
+
+            
         }
 
-        catch (Exception e){
-            Console.Error.WriteLine(e.Message);
+        else
+        {
+            Console.WriteLine("file not found in current directory");
         }
 
         
