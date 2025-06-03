@@ -1,0 +1,53 @@
+[
+  {
+    "code": "INFO-3138",
+    "evaluation": [
+      {
+        "description": "Project 1",
+        "weight": 15,
+        "outOf": 15,
+        "earnedMarks": 12
+      },
+      {
+        "description": "Quiz 1",
+        "weight": 2,
+        "outOf": 5,
+        "earnedMarks": 4
+      }
+    ]
+  },
+  {
+    "code": "INFO-3136",
+    "evaluation": [
+      {
+        "description": "Assignment 1",
+        "weight": 20,
+        "outOf": 50,
+        "earnedMarks": 40
+      },
+      {
+        "description": "Project 1",
+        "weight": 25,
+        "outOf": 120,
+        "earnedMarks": 85
+      }
+    ]
+  },
+  {
+    "code": "INFO-3111",
+    "evaluation": [
+      {
+        "description": "Checkpoint 1",
+        "weight": 1,
+        "outOf": 10,
+        "earnedMarks": 10
+      },
+      {
+        "description": "Project 1",
+        "weight": 15,
+        "outOf": 50,
+        "earnedMarks": 40
+      }
+    ]
+  }
+]
