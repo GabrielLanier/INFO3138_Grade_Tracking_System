@@ -28,7 +28,7 @@ namespace GLEI_GradeTrackingSystem
         [JsonPropertyName("earnedMarks")]
         public double EarnedMarks { get; set; }
 
-        public double percentEarned(){ return (EarnedMarks/OutOf)*100.0; }
+        public double percentEarned(){ return EarnedMarks / OutOf; }
 
         public double courseMarks() { return Weight*percentEarned(); }  
     }

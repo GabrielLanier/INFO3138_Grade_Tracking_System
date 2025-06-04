@@ -47,3 +47,7 @@ C:\Users\gabri\OneDrive\Documents\Fanshawe Sem 4\Declarative Languages\Project 1
 C:\Users\gabri\OneDrive\Documents\Fanshawe Sem 4\Declarative Languages\Project 1\GLEI_GradeTrackingSystem\GLEI_GradeTrackingSystem\bin\Debug\net8.0\Newtonsoft.Json.Schema.dll
 C:\Users\gabri\OneDrive\Documents\Fanshawe Sem 4\Declarative Languages\Project 1\GLEI_GradeTrackingSystem\GLEI_GradeTrackingSystem\obj\Debug\net8.0\GLEI_GradeTrackingSystem.csproj.AssemblyReference.cache
 C:\Users\gabri\OneDrive\Documents\Fanshawe Sem 4\Declarative Languages\Project 1\GLEI_GradeTrackingSystem\GLEI_GradeTrackingSystem\obj\Debug\net8.0\GLEI_Gra.DCA9E467.Up2Date
+C:\CPA\DL - Project1\Project1\INFO3138_DeclarativeLanguages\GLEI_GradeTrackingSystem\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\CPA\DL - Project1\Project1\INFO3138_DeclarativeLanguages\GLEI_GradeTrackingSystem\bin\Debug\net8.0\Newtonsoft.Json.Schema.dll
+C:\CPA\DL - Project1\Project1\INFO3138_DeclarativeLanguages\GLEI_GradeTrackingSystem\obj\Debug\net8.0\GLEI_GradeTrackingSystem.csproj.AssemblyReference.cache
+C:\CPA\DL - Project1\Project1\INFO3138_DeclarativeLanguages\GLEI_GradeTrackingSystem\obj\Debug\net8.0\GLEI_Gra.DCA9E467.Up2Date
