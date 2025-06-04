@@ -27,6 +27,10 @@ namespace GLEI_GradeTrackingSystem
         [Required]
         [JsonPropertyName("earnedMarks")]
         public double EarnedMarks { get; set; }
+
+        public double percentEarned(){ return (EarnedMarks/OutOf)*100.0; }
+
+        public double courseMarks() { return Weight*percentEarned(); }  
     }
 
     class Course
@@ -63,6 +67,6 @@ namespace GLEI_GradeTrackingSystem
             return totalWeight;
         }
 
-        public double getCurrentPercentage(){ return (getTotalMarksEarned()/getTotalWeight())*100; }
+        public double getCurrentPercentage(){ return (getTotalMarksEarned()/getTotalWeight())*100.0; }
     }
 }

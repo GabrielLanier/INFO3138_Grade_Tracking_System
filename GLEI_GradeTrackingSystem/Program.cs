@@ -60,6 +60,15 @@ namespace GLEI_GradeTrackingSystem
             }
         }
 
+        public static void printMainMenu()
+        {
+            Console.WriteLine("Press # from the above list to view/edit/delete a specific course.\n");
+
+            Console.WriteLine("Press A to add a new course\n");
+
+            Console.WriteLine("Press X to quit\n");
+        }
+
         static void Main(string[] args)
         {
             string dataPath = "courseData.json";
@@ -107,19 +116,45 @@ namespace GLEI_GradeTrackingSystem
                     Console.WriteLine("There are currently no saved courses");
                 }
 
+                Console.WriteLine("----------------------------------------------------------------------------------------------------------------------\n");
+
+                printMainMenu();
+
                 Console.WriteLine("----------------------------------------------------------------------------------------------------------------------");
 
-                Console.WriteLine("Want to stop?");
+                Console.Write("Enter a command: ");
                 userChoice = Console.ReadLine();
+
+                //if user inputs a digit matching a course index, enter the evaluation menu 
+                if (char.IsDigit(userChoice[0]))
+                    for (int i = 0; i < courses.Count(); i++)
+                    {
+                        if(int.TryParse(userChoice[0].ToString(), out int choice) && choice == i-1)
+                        {
+                            //clear console for a cleaner view
+                            Console.Clear();
+                            Console.WriteLine("\t\t\t\t\t    ~GRADING TRACKING SYSTEM~\t\t\t\t\n");
+                            Console.WriteLine("+--------------------------------------------------------------------------------------------------------------------+");
+                            Console.WriteLine($"|\t\t\t\t\t{courses[i].Code} Evaluations\t\t\t\t\t\t\t|");
+                            Console.WriteLine("+--------------------------------------------------------------------------------------------------------------------+");
+
+                            if (courses[i].Evaluation.Count == 0)
+                            {
+                                Console.WriteLine($"There are currently no evaluations for {courses[i].Code}");
+                            }
+
+                            else
+                            {
+                                Console.WriteLine("#. Evaluation        Marks Earned      Out Of     Percent        Course Marks          Weight/100");
+                                for(int j = 0; j < courses[i].Evaluation.Count; j++) {
+                                    Console.WriteLine($"{j + 1}. {courses[i].Evaluation[j].Description,-19} {courses[i].Evaluation[j].EarnedMarks,10:F2} {courses[i].Evaluation[j].OutOf,11:F2} {courses[i].Evaluation[j].percentEarned(), 11:F2} {courses[i].Evaluation[j].courseMarks(),19:F2} {courses[i].Evaluation[j].Weight,19:F2}");
+                                }
+                            }
+                        }
+                    }
+
+                
             }
-
-
-
-
-
-
-
-            
             
         }
 
