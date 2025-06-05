@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "6BsH/I/smH8=",
+  "dgSpecHash": "UM4MjjVmZus=",
   "success": true,
-  "projectFilePath": "C:\\CPA\\DL - Project1\\Project1\\INFO3138_DeclarativeLanguages\\GLEI_GradeTrackingSystem\\GLEI_GradeTrackingSystem.csproj",
+  "projectFilePath": "C:\\Users\\gabri\\OneDrive\\Documents\\Fanshawe Sem 4\\Declarative Languages\\Project 1\\GLEI_GradeTrackingSystem\\GLEI_GradeTrackingSystem\\GLEI_GradeTrackingSystem.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\evely\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
-    "C:\\Users\\evely\\.nuget\\packages\\newtonsoft.json.schema\\4.0.1\\newtonsoft.json.schema.4.0.1.nupkg.sha512"
+    "C:\\Users\\gabri\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\gabri\\.nuget\\packages\\newtonsoft.json.schema\\4.0.1\\newtonsoft.json.schema.4.0.1.nupkg.sha512"
   ],
   "logs": []
 }

@@ -3,7 +3,8 @@
   "title": "Course",
   "type": "array",
   "items": {
-    "required": ["code"],
+    "type": "object",
+    "required": [ "code" ],
     "properties": {
       "code": {
         "type": "string",
@@ -15,7 +16,7 @@
         "minItems": 0,
         "items": {
           "type": "object",
-          "required": ["description", "weight", "outOf", "earnedMarks"],
+          "required": [ "description", "weight", "outOf", "earnedMarks" ],
           "properties": {
             "description": {
               "type": "string",

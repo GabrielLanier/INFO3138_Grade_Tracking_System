@@ -1,21 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\CPA\\DL - Project1\\Project1\\INFO3138_DeclarativeLanguages\\",
+  "WorkspaceRootPath": "C:\\Users\\gabri\\OneDrive\\Documents\\Fanshawe Sem 4\\Declarative Languages\\Project 1\\GLEI_GradeTrackingSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E0FB1EDA-E98D-43F4-821D-1F04A130C46D}|GLEI_GradeTrackingSystem\\GLEI_GradeTrackingSystem.csproj|c:\\cpa\\dl - project1\\project1\\info3138_declarativelanguages\\glei_gradetrackingsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0FB1EDA-E98D-43F4-821D-1F04A130C46D}|GLEI_GradeTrackingSystem\\GLEI_GradeTrackingSystem.csproj|solutionrelative:glei_gradetrackingsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0FB1EDA-E98D-43F4-821D-1F04A130C46D}|GLEI_GradeTrackingSystem\\GLEI_GradeTrackingSystem.csproj|c:\\cpa\\dl - project1\\project1\\info3138_declarativelanguages\\glei_gradetrackingsystem\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E0FB1EDA-E98D-43F4-821D-1F04A130C46D}|GLEI_GradeTrackingSystem\\GLEI_GradeTrackingSystem.csproj|c:\\users\\gabri\\onedrive\\documents\\fanshawe sem 4\\declarative languages\\project 1\\glei_gradetrackingsystem\\glei_gradetrackingsystem\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0FB1EDA-E98D-43F4-821D-1F04A130C46D}|GLEI_GradeTrackingSystem\\GLEI_GradeTrackingSystem.csproj|solutionrelative:glei_gradetrackingsystem\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\CPA\\DL - Project1\\Project1\\INFO3138_DeclarativeLanguages\\GLEI_GradeTrackingSystem\\bin\\Debug\\net8.0\\courseSchema.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GLEI_GradeTrackingSystem\\bin\\Debug\\net8.0\\courseSchema.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{E0FB1EDA-E98D-43F4-821D-1F04A130C46D}|GLEI_GradeTrackingSystem\\GLEI_GradeTrackingSystem.csproj|c:\\users\\gabri\\onedrive\\documents\\fanshawe sem 4\\declarative languages\\project 1\\glei_gradetrackingsystem\\glei_gradetrackingsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0FB1EDA-E98D-43F4-821D-1F04A130C46D}|GLEI_GradeTrackingSystem\\GLEI_GradeTrackingSystem.csproj|solutionrelative:glei_gradetrackingsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\CPA\\DL - Project1\\Project1\\INFO3138_DeclarativeLanguages\\GLEI_GradeTrackingSystem\\bin\\Debug\\net8.0\\courseData.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gabri\\OneDrive\\Documents\\Fanshawe Sem 4\\Declarative Languages\\Project 1\\GLEI_GradeTrackingSystem\\GLEI_GradeTrackingSystem\\bin\\Debug\\net8.0\\courseData.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GLEI_GradeTrackingSystem\\bin\\Debug\\net8.0\\courseData.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
@@ -26,73 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "courseData.json",
-              "DocumentMoniker": "C:\\CPA\\DL - Project1\\Project1\\INFO3138_DeclarativeLanguages\\GLEI_GradeTrackingSystem\\bin\\Debug\\net8.0\\courseData.json",
-              "RelativeDocumentMoniker": "GLEI_GradeTrackingSystem\\bin\\Debug\\net8.0\\courseData.json",
-              "ToolTip": "C:\\CPA\\DL - Project1\\Project1\\INFO3138_DeclarativeLanguages\\GLEI_GradeTrackingSystem\\bin\\Debug\\net8.0\\courseData.json",
-              "RelativeToolTip": "GLEI_GradeTrackingSystem\\bin\\Debug\\net8.0\\courseData.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-04T18:54:21.587Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "courseSchema.json",
-              "DocumentMoniker": "C:\\CPA\\DL - Project1\\Project1\\INFO3138_DeclarativeLanguages\\GLEI_GradeTrackingSystem\\bin\\Debug\\net8.0\\courseSchema.json",
-              "RelativeDocumentMoniker": "GLEI_GradeTrackingSystem\\bin\\Debug\\net8.0\\courseSchema.json",
-              "ToolTip": "C:\\CPA\\DL - Project1\\Project1\\INFO3138_DeclarativeLanguages\\GLEI_GradeTrackingSystem\\bin\\Debug\\net8.0\\courseSchema.json",
-              "RelativeToolTip": "GLEI_GradeTrackingSystem\\bin\\Debug\\net8.0\\courseSchema.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-04T18:23:25.684Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\CPA\\DL - Project1\\Project1\\INFO3138_DeclarativeLanguages\\GLEI_GradeTrackingSystem\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\Fanshawe Sem 4\\Declarative Languages\\Project 1\\GLEI_GradeTrackingSystem\\GLEI_GradeTrackingSystem\\Program.cs",
               "RelativeDocumentMoniker": "GLEI_GradeTrackingSystem\\Program.cs",
-              "ToolTip": "C:\\CPA\\DL - Project1\\Project1\\INFO3138_DeclarativeLanguages\\GLEI_GradeTrackingSystem\\Program.cs*",
-              "RelativeToolTip": "GLEI_GradeTrackingSystem\\Program.cs*",
-              "ViewState": "AgIAAKgAAAAAAAAAAAAuwLgAAADpAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\Fanshawe Sem 4\\Declarative Languages\\Project 1\\GLEI_GradeTrackingSystem\\GLEI_GradeTrackingSystem\\Program.cs",
+              "RelativeToolTip": "GLEI_GradeTrackingSystem\\Program.cs",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAAAKABAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-26T23:55:09.54Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Helper.cs",
-              "DocumentMoniker": "C:\\CPA\\DL - Project1\\Project1\\INFO3138_DeclarativeLanguages\\GLEI_GradeTrackingSystem\\Helper.cs",
+              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\Fanshawe Sem 4\\Declarative Languages\\Project 1\\GLEI_GradeTrackingSystem\\GLEI_GradeTrackingSystem\\Helper.cs",
               "RelativeDocumentMoniker": "GLEI_GradeTrackingSystem\\Helper.cs",
-              "ToolTip": "C:\\CPA\\DL - Project1\\Project1\\INFO3138_DeclarativeLanguages\\GLEI_GradeTrackingSystem\\Helper.cs",
+              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\Fanshawe Sem 4\\Declarative Languages\\Project 1\\GLEI_GradeTrackingSystem\\GLEI_GradeTrackingSystem\\Helper.cs",
               "RelativeToolTip": "GLEI_GradeTrackingSystem\\Helper.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAzwB4AAABEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-27T17:34:19.896Z",
               "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 17,
-          "SelectedChildIndex": -1,
-          "Children": [
+            },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "courseData.json",
+              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\Fanshawe Sem 4\\Declarative Languages\\Project 1\\GLEI_GradeTrackingSystem\\GLEI_GradeTrackingSystem\\bin\\Debug\\net8.0\\courseData.json",
+              "RelativeDocumentMoniker": "GLEI_GradeTrackingSystem\\bin\\Debug\\net8.0\\courseData.json",
+              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\Fanshawe Sem 4\\Declarative Languages\\Project 1\\GLEI_GradeTrackingSystem\\GLEI_GradeTrackingSystem\\bin\\Debug\\net8.0\\courseData.json",
+              "RelativeToolTip": "GLEI_GradeTrackingSystem\\bin\\Debug\\net8.0\\courseData.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-04T18:54:21.587Z"
             }
           ]
         }

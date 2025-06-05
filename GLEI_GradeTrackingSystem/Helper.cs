@@ -1,9 +1,16 @@
-﻿using System;
+﻿/*
+ * Names:   Gabriel Lanier Dugand, Evelyn Infante Lumbreras
+ * Purpose: Helper file that holds the class definitions needed in the main file.
+ * Date:    June 5, 2025
+ */
+
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
-using System.Text.Json.Serialization;
+using Newtonsoft.Json;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
@@ -13,19 +20,19 @@ namespace GLEI_GradeTrackingSystem
     class Evaluation
     {
         [Required]
-        [JsonPropertyName("description")]
+        [JsonProperty("description")]
         public string Description { get; set; } = "";
 
         [Required]
-        [JsonPropertyName("weight")]
+        [JsonProperty("weight")]
         public double Weight { get; set; }
 
         [Required]
-        [JsonPropertyName("outOf")]
+        [JsonProperty("outOf")]
         public double OutOf { get; set;} 
 
         [Required]
-        [JsonPropertyName("earnedMarks")]
+        [JsonProperty("earnedMarks")]
         public double EarnedMarks { get; set; }
 
         public double percentEarned(){ return EarnedMarks / OutOf; }
@@ -36,11 +43,11 @@ namespace GLEI_GradeTrackingSystem
     class Course
     {
         [Required]
-        [JsonPropertyName("code")]
+        [JsonProperty("code")]
         public string? Code {  get; set; }
 
         [Required]
-        [JsonPropertyName("evaluation")]
+        [JsonProperty("evaluation")]
         public List<Evaluation> Evaluation { get; set; } = new();
 
         //Calculate total percentage achieved in the course so far 

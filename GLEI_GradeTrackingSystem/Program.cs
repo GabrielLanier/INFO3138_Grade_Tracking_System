@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ * Names:   Gabriel Lanier Dugand, Evelyn Infante Lumbreras
+ * Purpose: Create a grade tracking system that validates data read and input from/into a JSON file against a schema. Functions include: creating a new file if one not present and
+ *          adding, deleting, and editing courses/evaluations.
+ * Date:    June 5, 2025
+ */
+
+using System;
 using System.IO;
 using System.Numerics;
 using System.Reflection.Metadata.Ecma335;
@@ -38,14 +45,14 @@ namespace GLEI_GradeTrackingSystem
                 else
                 {
                     Console.WriteLine($"Grades data file {fileName} not found. Create new file? (y/n): ");
-                    string createFileChoice = Console.ReadLine();
-                    while (createFileChoice.ToUpper()[0] != 'Y' && createFileChoice.ToUpper()[0] != 'N')
+                    string createFileChoice = Console.ReadLine().ToUpper();
+                    while (createFileChoice[0] != 'Y' && createFileChoice[0] != 'N')
                     {
-                        Console.WriteLine("Invalid input. Create new file?");
-                        createFileChoice = Console.ReadLine();
+                        Console.WriteLine("Invalid input. Create new file? (y/n)");
+                        createFileChoice = Console.ReadLine().ToUpper();
                     }
 
-                    if (createFileChoice.ToUpper()[0] == 'N')
+                    if (createFileChoice[0] == 'N')
                         Environment.Exit(0);
 
                     File.Create(fileName).Close();
@@ -70,7 +77,7 @@ namespace GLEI_GradeTrackingSystem
             Console.WriteLine("Press X to quit\n");
         }
 
-        public static void printEvaluationMenu()
+        public static void printEvaluationListMenu()
         {
             Console.WriteLine("\nPress D to delete this course.\n");
 
@@ -81,24 +88,24 @@ namespace GLEI_GradeTrackingSystem
             Console.WriteLine("Press X to return to the main menu. \n");
         }
 
-        public static bool ValidateAgainstSchema(object obj, string schemaPath, out IList<string> messages)
+        public static void printEvaluationMenu()
         {
-            string json = JsonConvert.SerializeObject(obj);
+            Console.WriteLine("\nPress D to delete this evaluation.\n");
+
+            Console.WriteLine("Press E to edit this evaluation. \n");
+
+            Console.WriteLine("Press X to return to the main menu. \n");
+        }
+
+        public static bool ValidateAgainstSchema(List<Course> courses, string schemaPath, out IList<string> messages)
+        {
+            string json = JsonConvert.SerializeObject(courses);
             JToken token = JToken.Parse(json);
 
             string schemaJson = File.ReadAllText(schemaPath);
             JSchema schema = JSchema.Parse(schemaJson);
-
-            bool isValid = token.IsValid(schema, out messages);
-
-            if (!isValid) 
-            {
-                foreach (var msg in messages) 
-                {
-                    Console.WriteLine("Validation error: " + msg);
-                }
-            }
-            return isValid;
+          
+            return token.IsValid(schema, out messages);;
         }
 
         static void Main(string[] args)
@@ -116,7 +123,7 @@ namespace GLEI_GradeTrackingSystem
             {
                 if (ValidateInputFile(courseData, schemaPath, out messages))
                 {
-                    var coursesCopy = System.Text.Json.JsonSerializer.Deserialize<List<Course>>(courseData);
+                    var coursesCopy = JsonConvert.DeserializeObject<List<Course>>(courseData);
                     if (coursesCopy != null)
                         courses = coursesCopy;
                 }
@@ -125,7 +132,7 @@ namespace GLEI_GradeTrackingSystem
                     Console.WriteLine("Invalid Line");
             }
 
-            while (userChoice.ToUpper()[0] != 'X' || string.IsNullOrEmpty(userChoice))
+            while (userChoice[0] != 'X')
             {
                 Console.Clear();
                 Console.WriteLine("\t\t\t\t\t    ~GRADING TRACKING SYSTEM~\t\t\t\t\n");
@@ -150,97 +157,230 @@ namespace GLEI_GradeTrackingSystem
                     Console.WriteLine("There are currently no saved courses");
                 }
 
-            Console.WriteLine("----------------------------------------------------------------------------------------------------------------------\n");
+                Console.WriteLine("----------------------------------------------------------------------------------------------------------------------\n");
 
-            printMainMenu();
+                printMainMenu();
 
-            Console.WriteLine("----------------------------------------------------------------------------------------------------------------------");
+                Console.WriteLine("----------------------------------------------------------------------------------------------------------------------");
 
-            Console.Write("Enter a command: ");
-            userChoice = Console.ReadLine();
+                Console.Write("Enter a command: ");
+                userChoice = Console.ReadLine().ToUpper();
 
-            //if user inputs a digit matching a course index, enter the evaluation menu 
-            if (char.IsDigit(userChoice[0]))
-                for (int i = 0; i < courses.Count(); i++)
+                //if user inputs a digit matching a course index, enter the evaluation menu 
+                if (string.IsNullOrEmpty(userChoice))
                 {
-                    if (int.TryParse(userChoice[0].ToString(), out int choice) && choice == i + 1)
-                    {
-                        //clear console for a cleaner view
-                        Console.Clear();
-                        Console.WriteLine("\t\t\t\t\t    ~GRADING TRACKING SYSTEM~\t\t\t\t\n");
-                        Console.WriteLine("+--------------------------------------------------------------------------------------------------------------------+");
-                        Console.WriteLine($"|\t\t\t\t\t{courses[i].Code} Evaluations\t\t\t\t\t\t\t     |");
-                        Console.WriteLine("+--------------------------------------------------------------------------------------------------------------------+");
-
-                        if (courses[i].Evaluation.Count == 0)
-                        {
-                            Console.WriteLine($"There are currently no evaluations for {courses[i].Code}");
-                        }
-
-                        else
-                        {
-                            Console.WriteLine("#. Evaluation        Marks Earned      Out Of     Percent        Course Marks          Weight/100");
-                            for (int j = 0; j < courses[i].Evaluation.Count; j++)
-                            {
-                                Console.WriteLine($"{j + 1}. {courses[i].Evaluation[j].Description,-19} {courses[i].Evaluation[j].EarnedMarks,10:F2} {courses[i].Evaluation[j].OutOf,11:F2} {courses[i].Evaluation[j].percentEarned()*100,11:F2} {courses[i].Evaluation[j].courseMarks(),19:F2} {courses[i].Evaluation[j].Weight,19:F2}");
-                            }
-                        }
-
-                        printEvaluationMenu();
-                        Console.Write("Enter a command: ");
-                        userChoice = Console.ReadLine();
-
-                        if(userChoice.ToUpper()[0] == 'D')
-                        {
-                            Console.Write("Are you sure you want to delete this course? (y/n): ");
-                            userChoice = Console.ReadLine();
-                            if((userChoice.ToUpper()[0] == 'Y'))
-                            {
-                                courses.Remove(courses[i]);
-                            }
-                        }
-
-                        //add an evaluation to the 
-                        else if(userChoice.ToUpper()[0] == 'A')
-                        {
-                            Evaluation newEvaluation = new Evaluation();
-                            Console.Write("Enter a description: ");
-                            newEvaluation.Description = Console.ReadLine();
-
-                            Console.Write("Enter the 'out-of' mark: ");
-                            double outOf;
-                            while(!double.TryParse(Console.ReadLine(), out outOf))
-                            {
-                                Console.Write("Please enter number for the 'out-of' mark:");
-                            }
-                            newEvaluation.OutOf = outOf;
-
-                            Console.Write("Enter the % weight: ");
-                            double weight;
-                            while (!double.TryParse(Console.ReadLine(), out weight))
-                            {
-                                Console.Write("Please enter number for the 'out-of' mark:");
-                            }
-                            newEvaluation.Weight = weight;
-
-                            Console.Write("Enter marks earned or press ENTER to skip: ");
-                            double marksEarned = 0.0;
-                            string input = Console.ReadLine();
-                                
-                            if(!string.IsNullOrEmpty(input))
-                            {
-                                while  (!double.TryParse(input, out marksEarned))
-                                    Console.Write("Enter a float number for marks earned or press ENTER to skip: ");
-
-                                newEvaluation.EarnedMarks = marksEarned;
-                            }
-                                    
-                            courses[i].Evaluation.Add(newEvaluation);
-                        }
-                    }
+                    userChoice = " ";
+                    continue;
                 }
 
-                else if (userChoice.ToUpper()[0] == 'A')
+                else if (char.IsDigit(userChoice[0]))
+                    for (int i = 0; i < courses.Count(); i++)
+                    {
+                        if (int.TryParse(userChoice[0].ToString(), out int choice) && choice == i + 1)
+                        {
+                            while (userChoice[0] != 'X')
+                            {
+                                //clear console for a cleaner view
+                                Console.Clear();
+                                Console.WriteLine("\t\t\t\t\t    ~GRADING TRACKING SYSTEM~\t\t\t\t\n");
+                                Console.WriteLine("+--------------------------------------------------------------------------------------------------------------------+");
+                                Console.WriteLine($"|\t\t\t\t\t\t{courses[i].Code} Evaluations\t\t\t\t\t\t\t     |");
+                                Console.WriteLine("+--------------------------------------------------------------------------------------------------------------------+");
+
+                                if (courses[i].Evaluation.Count == 0)
+                                {
+                                    Console.WriteLine($"There are currently no evaluations for {courses[i].Code}");
+                                }
+
+                                else
+                                {
+                                    Console.WriteLine("#. Evaluation        Marks Earned      Out Of     Percent        Course Marks          Weight/100");
+                                    for (int j = 0; j < courses[i].Evaluation.Count; j++)
+                                    {
+                                        Console.WriteLine($"{j + 1}. {courses[i].Evaluation[j].Description,-19} {courses[i].Evaluation[j].EarnedMarks,10:F2} {courses[i].Evaluation[j].OutOf,11:F2} {courses[i].Evaluation[j].percentEarned() * 100,11:F2} {courses[i].Evaluation[j].courseMarks(),19:F2} {courses[i].Evaluation[j].Weight,19:F2}\n");
+                                    }
+                                }
+
+                                Console.WriteLine("----------------------------------------------------------------------------------------------------------------------");
+                                printEvaluationListMenu();
+                                Console.WriteLine("----------------------------------------------------------------------------------------------------------------------");
+                                Console.Write("Enter a command: ");
+                                userChoice = Console.ReadLine().ToUpper();
+
+                                //Delete the currently selected course
+                                if (userChoice[0] == 'D')
+                                {
+                                    Console.Write("Are you sure you want to delete this course? (y/n): ");
+                                    userChoice = Console.ReadLine();
+                                    if ((userChoice.ToUpper()[0] == 'Y'))
+                                    {
+                                        courses.Remove(courses[i]);
+                                        break;
+                                    }
+                                }
+
+                                //add an evaluation to the specified course
+                                else if (userChoice[0] == 'A')
+                                {
+                                    Evaluation newEvaluation = new Evaluation();
+                                    Course temp = new Course();
+                                    Console.Write("Enter a description: ");
+                                    newEvaluation.Description = Console.ReadLine();
+
+                                    Console.Write("Enter the 'out-of' mark: ");
+                                    double outOf;
+                                    while (!double.TryParse(Console.ReadLine(), out outOf))
+                                    {
+                                        Console.Write("Please enter number for the 'out-of' mark:");
+                                    }
+                                    newEvaluation.OutOf = outOf;
+
+                                    Console.Write("Enter the % weight: ");
+                                    double weight;
+                                    while (!double.TryParse(Console.ReadLine(), out weight))
+                                    {
+                                        Console.Write("Please enter number for the 'weight' percentage:");
+                                    }
+                                    newEvaluation.Weight = weight;
+
+                                    Console.Write("Enter marks earned or press ENTER to skip: ");
+                                    double marksEarned = 0.0;
+                                    string input = Console.ReadLine();
+
+                                    if (!string.IsNullOrEmpty(input))
+                                    {
+                                        while (!double.TryParse(input, out marksEarned))
+                                        {
+                                            Console.Write("Enter a float number for marks earned: ");
+                                            input = Console.ReadLine();
+                                        }
+
+                                        newEvaluation.EarnedMarks = marksEarned;
+                                    }
+
+                                    temp.Code = "TEST-1111";
+                                    temp.Evaluation.Add(newEvaluation);
+
+                                    List<Course> tempList = new List<Course>() { temp };
+
+                                    if (ValidateAgainstSchema(tempList, schemaPath, out messages))
+                                    {
+                                        courses[i].Evaluation.Add(newEvaluation);
+                                        Console.WriteLine("Evaluation added.");
+                                    }
+                                    else
+                                        Console.WriteLine("Invalid data entered into evaluation. Evaluation not added.");
+
+                                    Console.WriteLine("Press enter to go back to Main Menu");
+                                    Console.ReadLine();
+                                }
+
+                                else if (char.IsDigit(userChoice[0]))
+                                    for (int k = 0; k < courses[i].Evaluation.Count; k++)
+                                    {
+                                        if (int.TryParse(userChoice.ToString(), out int evalChoice) && evalChoice == k + 1)
+                                        {
+                                            while (userChoice[0] != 'X')
+                                            {
+                                                Console.Clear();
+                                                Console.WriteLine("\t\t\t\t\t    ~GRADING TRACKING SYSTEM~\t\t\t\t\n");
+                                                Console.WriteLine("+--------------------------------------------------------------------------------------------------------------------+");
+                                                Console.WriteLine($"|\t\t\t\t\t{courses[i].Evaluation[k].Description}\t\t\t\t\t\t\t     |");
+                                                Console.WriteLine("+--------------------------------------------------------------------------------------------------------------------+");
+
+                                                Console.WriteLine("Marks Earned      Out Of     Percent        Course Marks          Weight/100");
+                                                Console.WriteLine($"{courses[i].Evaluation[k].EarnedMarks,12:F2} {courses[i].Evaluation[k].OutOf,11:F2} {courses[i].Evaluation[k].percentEarned() * 100,11:F2} {courses[i].Evaluation[k].courseMarks(),19:F2} {courses[i].Evaluation[k].Weight,19:F2}\n");
+                                                Console.WriteLine("----------------------------------------------------------------------------------------------------------------------");
+
+                                                printEvaluationMenu();
+
+                                                Console.WriteLine("----------------------------------------------------------------------------------------------------------------------");
+
+                                                Console.Write("Enter a command: ");
+                                                userChoice = Console.ReadLine().ToUpper();
+
+                                                //Delete the currently selected course
+                                                if (userChoice[0] == 'D')
+                                                {
+                                                    Console.Write("Are you sure you want to delete this evaluation? (y/n): ");
+                                                    userChoice = Console.ReadLine();
+                                                    if ((userChoice.ToUpper()[0] == 'Y'))
+                                                    {
+                                                        courses[i].Evaluation.Remove(courses[i].Evaluation[k]);
+                                                        break;
+                                                    }
+                                                }
+
+                                                //edit this evaluation
+                                                else if (userChoice[0] == 'E')
+                                                {
+                                                    Evaluation newEvaluation = new Evaluation();
+                                                    Course temp = new Course();
+                                                    Console.Write("Enter a new description: ");
+                                                    newEvaluation.Description = Console.ReadLine();
+
+                                                    Console.Write("Enter the 'out-of' mark: ");
+                                                    double outOf;
+                                                    while (!double.TryParse(Console.ReadLine(), out outOf))
+                                                    {
+                                                        Console.Write("Please enter number for the 'out-of' mark:");
+                                                    }
+                                                    newEvaluation.OutOf = outOf;
+
+                                                    Console.Write("Enter the % weight: ");
+                                                    double weight;
+                                                    while (!double.TryParse(Console.ReadLine(), out weight))
+                                                    {
+                                                        Console.Write("Please enter number for the 'weight' percentage:");
+                                                    }
+                                                    newEvaluation.Weight = weight;
+
+                                                    Console.Write("Enter marks earned or press ENTER to skip: ");
+                                                    double marksEarned = 0.0;
+                                                    string input = Console.ReadLine();
+
+                                                    if (!string.IsNullOrEmpty(input))
+                                                    {
+                                                        while (!double.TryParse(input, out marksEarned))
+                                                        {
+                                                            Console.Write("Enter a float number for marks earned: ");
+                                                            input = Console.ReadLine();
+                                                        }
+
+                                                        newEvaluation.EarnedMarks = marksEarned;
+                                                    }
+
+                                                    temp.Code = "TEST-1111";
+                                                    temp.Evaluation.Add(newEvaluation);
+
+                                                    List<Course> tempList = new List<Course>() { temp };
+
+                                                    if (ValidateAgainstSchema(tempList, schemaPath, out messages))
+                                                    {
+
+                                                        courses[i].Evaluation[k] = newEvaluation;
+                                                        
+                                                        Console.WriteLine("Evaluation updated.");
+                                                    }
+                                                    else
+                                                        Console.WriteLine("Invalid data entered into evaluation. Evaluation not added.");
+
+                                                    Console.WriteLine("Press enter to go back to Main Menu");
+                                                    Console.ReadLine();
+                                                }
+
+                                            }
+                                            userChoice = " ";
+                                        }
+                                    }
+                            }
+
+                            userChoice = " ";
+                        }
+                    }
+
+                //add a new course to the list, but not to the file
+                else if (userChoice[0] == 'A')
                 {
                     Course newCourse;
 
@@ -249,37 +389,36 @@ namespace GLEI_GradeTrackingSystem
                         newCourse = new Course();
                         Console.Write("Enter a course code: ");
                         newCourse.Code = Console.ReadLine();
-                        
-
 
                         List<Course> tempCourseList = new List<Course> { newCourse };
-
-                        Console.WriteLine(tempCourseList.Count);
-                        Console.WriteLine(tempCourseList[0].Code);
-                        Console.WriteLine(tempCourseList[0].Evaluation);
 
                         if (ValidateAgainstSchema(tempCourseList, schemaPath, out messages))
                         {
                             courses.Add(newCourse);
+                            Console.WriteLine("Course added.");
                             break;
                         }
                         else
                         {
                             Console.WriteLine("Invalid course data: ");
-                            foreach(var msg in messages)
-                            { Console.WriteLine(msg); }
-
+                            foreach (var msg in messages) { Console.WriteLine(msg); }
                         }
 
                     } while (true);
 
-                  
+                    Console.WriteLine("Press enter to go back to Main Menu");
+                    Console.ReadLine();
+
                 }
 
 
             }
-            
-            
+
+            //export data to json file
+            string endData = JsonConvert.SerializeObject(courses);
+            File.WriteAllText(dataPath, endData);
+
+
         }
 
     }
