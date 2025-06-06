@@ -16,7 +16,6 @@ using System.Threading.Tasks;
 
 namespace GLEI_GradeTrackingSystem
 {
-
     class Evaluation
     {
         [Required]
@@ -35,9 +34,11 @@ namespace GLEI_GradeTrackingSystem
         [JsonProperty("earnedMarks")]
         public double EarnedMarks { get; set; }
 
-        public double percentEarned(){ return EarnedMarks / OutOf; }
+        //Purpose: Calculate percent achieved in the evaluation
+        public double percentEarned() => EarnedMarks / OutOf;
 
-        public double courseMarks() { return Weight*percentEarned(); }  
+        //Purpose: Calculate the course marks achieved from the evaluation
+        public double courseMarks() => Weight * percentEarned(); 
     }
 
     class Course
@@ -50,7 +51,7 @@ namespace GLEI_GradeTrackingSystem
         [JsonProperty("evaluation")]
         public List<Evaluation> Evaluation { get; set; } = new();
 
-        //Calculate total percentage achieved in the course so far 
+        //Purpose: Calculate total percentage achieved in the course so far 
         public double getTotalMarksEarned()
         {
             double totalMarksEarned = 0;
@@ -62,7 +63,7 @@ namespace GLEI_GradeTrackingSystem
             return totalMarksEarned;
         }
 
-        //Calculate total percentage possible in the course so far 
+        //Purpose: Calculate total percentage possible in the course so far 
         public double getTotalWeight()
         {
             double totalWeight = 0;
@@ -74,6 +75,7 @@ namespace GLEI_GradeTrackingSystem
             return totalWeight;
         }
 
-        public double getCurrentPercentage(){ return (getTotalMarksEarned()/getTotalWeight())*100.0; }
+        //Purpose: Calculate the grade achieved out of the evaluations completed so far 
+        public double getCurrentPercentage() => (getTotalMarksEarned() / getTotalWeight()) * 100.0;
     }
 }

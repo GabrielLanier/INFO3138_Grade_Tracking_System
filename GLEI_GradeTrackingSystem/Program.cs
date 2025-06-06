@@ -67,6 +67,7 @@ namespace GLEI_GradeTrackingSystem
             }
         }
 
+        //Purpose: print the main menu
         public static void printMainMenu()
         {
             
@@ -77,6 +78,7 @@ namespace GLEI_GradeTrackingSystem
             Console.WriteLine("Press X to quit\n");
         }
 
+        //Purpose: print the menu for the evaluation lists screen within each course
         public static void printEvaluationListMenu()
         {
             Console.WriteLine("\nPress D to delete this course.\n");
@@ -88,6 +90,7 @@ namespace GLEI_GradeTrackingSystem
             Console.WriteLine("Press X to return to the main menu. \n");
         }
 
+        //Purpose: print the menu when editing an indivial evaluation from the eval list
         public static void printEvaluationMenu()
         {
             Console.WriteLine("\nPress D to delete this evaluation.\n");
@@ -97,6 +100,7 @@ namespace GLEI_GradeTrackingSystem
             Console.WriteLine("Press X to return to the main menu. \n");
         }
 
+        //Purpose: check if the the new added course or evaluation is valid
         public static bool ValidateAgainstSchema(List<Course> courses, string schemaPath, out IList<string> messages)
         {
             string json = JsonConvert.SerializeObject(courses);
@@ -173,7 +177,9 @@ namespace GLEI_GradeTrackingSystem
                     continue;
                 }
 
+                //Check if the users input is a number
                 else if (char.IsDigit(userChoice[0]))
+                    //Validate that the users input matches against one of the current course numbers
                     for (int i = 0; i < courses.Count(); i++)
                     {
                         if (int.TryParse(userChoice[0].ToString(), out int choice) && choice == i + 1)
@@ -184,7 +190,7 @@ namespace GLEI_GradeTrackingSystem
                                 Console.Clear();
                                 Console.WriteLine("\t\t\t\t\t    ~GRADING TRACKING SYSTEM~\t\t\t\t\n");
                                 Console.WriteLine("+--------------------------------------------------------------------------------------------------------------------+");
-                                Console.WriteLine($"|\t\t\t\t\t\t{courses[i].Code} Evaluations\t\t\t\t\t\t\t     |");
+                                Console.WriteLine($"|\t\t\t\t\t\t{courses[i].Code} Evaluations\t\t\t\t\t             |");
                                 Console.WriteLine("+--------------------------------------------------------------------------------------------------------------------+");
 
                                 if (courses[i].Evaluation.Count == 0)
@@ -275,6 +281,7 @@ namespace GLEI_GradeTrackingSystem
                                     Console.ReadLine();
                                 }
 
+                                //Same as above. If the user's input is a number, validate that the users input matches against one of the current evaluation numbers
                                 else if (char.IsDigit(userChoice[0]))
                                     for (int k = 0; k < courses[i].Evaluation.Count; k++)
                                     {
@@ -285,7 +292,7 @@ namespace GLEI_GradeTrackingSystem
                                                 Console.Clear();
                                                 Console.WriteLine("\t\t\t\t\t    ~GRADING TRACKING SYSTEM~\t\t\t\t\n");
                                                 Console.WriteLine("+--------------------------------------------------------------------------------------------------------------------+");
-                                                Console.WriteLine($"|\t\t\t\t\t{courses[i].Evaluation[k].Description}\t\t\t\t\t\t\t     |");
+                                                Console.WriteLine($"|{courses[i].Evaluation[k].Description, 62} {"|", 54}");
                                                 Console.WriteLine("+--------------------------------------------------------------------------------------------------------------------+");
 
                                                 Console.WriteLine("Marks Earned      Out Of     Percent        Course Marks          Weight/100");
@@ -311,7 +318,7 @@ namespace GLEI_GradeTrackingSystem
                                                     }
                                                 }
 
-                                                //edit this evaluation
+                                                //Edit this evaluation
                                                 else if (userChoice[0] == 'E')
                                                 {
                                                     Evaluation newEvaluation = new Evaluation();
@@ -374,7 +381,6 @@ namespace GLEI_GradeTrackingSystem
                                         }
                                     }
                             }
-
                             userChoice = " ";
                         }
                     }
@@ -408,18 +414,11 @@ namespace GLEI_GradeTrackingSystem
 
                     Console.WriteLine("Press enter to go back to Main Menu");
                     Console.ReadLine();
-
                 }
-
-
             }
-
             //export data to json file
             string endData = JsonConvert.SerializeObject(courses);
             File.WriteAllText(dataPath, endData);
-
-
         }
-
     }
 }
