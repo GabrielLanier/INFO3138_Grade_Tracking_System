@@ -28,25 +28,6 @@ C:\CPA\DL - Project1\Project1\INFO3138_DeclarativeLanguages\GLEI_GradeTrackingSy
 C:\CPA\DL - Project1\Project1\INFO3138_DeclarativeLanguages\GLEI_GradeTrackingSystem\obj\Debug\net8.0\GLEI_GradeTrackingSystem.pdb
 C:\CPA\DL - Project1\Project1\INFO3138_DeclarativeLanguages\GLEI_GradeTrackingSystem\obj\Debug\net8.0\GLEI_GradeTrackingSystem.genruntimeconfig.cache
 C:\CPA\DL - Project1\Project1\INFO3138_DeclarativeLanguages\GLEI_GradeTrackingSystem\obj\Debug\net8.0\ref\GLEI_GradeTrackingSystem.dll
-C:\Users\gabri\OneDrive\Documents\Fanshawe Sem 4\Declarative Languages\Project 1\GLEI_GradeTrackingSystem\GLEI_GradeTrackingSystem\bin\Debug\net8.0\GLEI_GradeTrackingSystem.exe
-C:\Users\gabri\OneDrive\Documents\Fanshawe Sem 4\Declarative Languages\Project 1\GLEI_GradeTrackingSystem\GLEI_GradeTrackingSystem\bin\Debug\net8.0\GLEI_GradeTrackingSystem.deps.json
-C:\Users\gabri\OneDrive\Documents\Fanshawe Sem 4\Declarative Languages\Project 1\GLEI_GradeTrackingSystem\GLEI_GradeTrackingSystem\bin\Debug\net8.0\GLEI_GradeTrackingSystem.runtimeconfig.json
-C:\Users\gabri\OneDrive\Documents\Fanshawe Sem 4\Declarative Languages\Project 1\GLEI_GradeTrackingSystem\GLEI_GradeTrackingSystem\bin\Debug\net8.0\GLEI_GradeTrackingSystem.dll
-C:\Users\gabri\OneDrive\Documents\Fanshawe Sem 4\Declarative Languages\Project 1\GLEI_GradeTrackingSystem\GLEI_GradeTrackingSystem\bin\Debug\net8.0\GLEI_GradeTrackingSystem.pdb
-C:\Users\gabri\OneDrive\Documents\Fanshawe Sem 4\Declarative Languages\Project 1\GLEI_GradeTrackingSystem\GLEI_GradeTrackingSystem\obj\Debug\net8.0\GLEI_GradeTrackingSystem.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\gabri\OneDrive\Documents\Fanshawe Sem 4\Declarative Languages\Project 1\GLEI_GradeTrackingSystem\GLEI_GradeTrackingSystem\obj\Debug\net8.0\GLEI_GradeTrackingSystem.AssemblyInfoInputs.cache
-C:\Users\gabri\OneDrive\Documents\Fanshawe Sem 4\Declarative Languages\Project 1\GLEI_GradeTrackingSystem\GLEI_GradeTrackingSystem\obj\Debug\net8.0\GLEI_GradeTrackingSystem.AssemblyInfo.cs
-C:\Users\gabri\OneDrive\Documents\Fanshawe Sem 4\Declarative Languages\Project 1\GLEI_GradeTrackingSystem\GLEI_GradeTrackingSystem\obj\Debug\net8.0\GLEI_GradeTrackingSystem.csproj.CoreCompileInputs.cache
-C:\Users\gabri\OneDrive\Documents\Fanshawe Sem 4\Declarative Languages\Project 1\GLEI_GradeTrackingSystem\GLEI_GradeTrackingSystem\obj\Debug\net8.0\GLEI_GradeTrackingSystem.sourcelink.json
-C:\Users\gabri\OneDrive\Documents\Fanshawe Sem 4\Declarative Languages\Project 1\GLEI_GradeTrackingSystem\GLEI_GradeTrackingSystem\obj\Debug\net8.0\GLEI_GradeTrackingSystem.dll
-C:\Users\gabri\OneDrive\Documents\Fanshawe Sem 4\Declarative Languages\Project 1\GLEI_GradeTrackingSystem\GLEI_GradeTrackingSystem\obj\Debug\net8.0\refint\GLEI_GradeTrackingSystem.dll
-C:\Users\gabri\OneDrive\Documents\Fanshawe Sem 4\Declarative Languages\Project 1\GLEI_GradeTrackingSystem\GLEI_GradeTrackingSystem\obj\Debug\net8.0\GLEI_GradeTrackingSystem.pdb
-C:\Users\gabri\OneDrive\Documents\Fanshawe Sem 4\Declarative Languages\Project 1\GLEI_GradeTrackingSystem\GLEI_GradeTrackingSystem\obj\Debug\net8.0\GLEI_GradeTrackingSystem.genruntimeconfig.cache
-C:\Users\gabri\OneDrive\Documents\Fanshawe Sem 4\Declarative Languages\Project 1\GLEI_GradeTrackingSystem\GLEI_GradeTrackingSystem\obj\Debug\net8.0\ref\GLEI_GradeTrackingSystem.dll
-C:\Users\gabri\OneDrive\Documents\Fanshawe Sem 4\Declarative Languages\Project 1\GLEI_GradeTrackingSystem\GLEI_GradeTrackingSystem\bin\Debug\net8.0\Newtonsoft.Json.dll
-C:\Users\gabri\OneDrive\Documents\Fanshawe Sem 4\Declarative Languages\Project 1\GLEI_GradeTrackingSystem\GLEI_GradeTrackingSystem\bin\Debug\net8.0\Newtonsoft.Json.Schema.dll
-C:\Users\gabri\OneDrive\Documents\Fanshawe Sem 4\Declarative Languages\Project 1\GLEI_GradeTrackingSystem\GLEI_GradeTrackingSystem\obj\Debug\net8.0\GLEI_GradeTrackingSystem.csproj.AssemblyReference.cache
-C:\Users\gabri\OneDrive\Documents\Fanshawe Sem 4\Declarative Languages\Project 1\GLEI_GradeTrackingSystem\GLEI_GradeTrackingSystem\obj\Debug\net8.0\GLEI_Gra.DCA9E467.Up2Date
 C:\CPA\DL - Project1\Project1\INFO3138_DeclarativeLanguages\GLEI_GradeTrackingSystem\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\CPA\DL - Project1\Project1\INFO3138_DeclarativeLanguages\GLEI_GradeTrackingSystem\bin\Debug\net8.0\Newtonsoft.Json.Schema.dll
 C:\CPA\DL - Project1\Project1\INFO3138_DeclarativeLanguages\GLEI_GradeTrackingSystem\obj\Debug\net8.0\GLEI_GradeTrackingSystem.csproj.AssemblyReference.cache
